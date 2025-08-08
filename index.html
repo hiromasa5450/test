@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>テトリス</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>テトリス</h1>
+
+  <div class="game-area">
+    <div class="side-panel">
+      <h3>ホールド</h3>
+      <canvas id="hold" width="80" height="80"></canvas>
+
+      <h3>次のブロック</h3>
+      <canvas id="next" width="80" height="240"></canvas>
+
+      <p id="score">スコア: 0</p>
+    </div>
+
+    <canvas id="tetris" width="240" height="400"></canvas>
+  </div>
+
+  <div class="controls">
+    <div class="left-controls">
+      <button id="left">← 左</button>
+      <button id="right">右 →</button>
+    </div>
+    <div class="center-controls">
+      <button id="rotate">⟳ 回転</button>
+      <button id="down">↓ ソフト</button>
+      <button id="hardDrop">⬇︎⬇︎ ハード</button>
+      <button id="holdBtn">⏸ ホールド</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
